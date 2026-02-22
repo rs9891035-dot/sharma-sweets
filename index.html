@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharma Sweets | Samana</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#fff8f0;color:#333}
+header{background:#8b0000;color:#fff;text-align:center;padding:20px}
+nav button{margin:5px;padding:8px 14px;border:none;border-radius:5px;cursor:pointer}
+.banner{background:#ffd700;padding:10px;text-align:center;font-weight:bold}
+section{padding:20px;text-align:center}
+h2{color:#8b0000}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.gallery img{width:100%;border-radius:8px}
+.btn{display:inline-block;margin:10px;padding:12px 20px;color:#fff;text-decoration:none;border-radius:5px}
+.call{background:#007bff}
+.whatsapp{background:#25D366}
+footer{background:#8b0000;color:#fff;text-align:center;padding:10px}
+iframe{width:100%;height:300px;border:0}
+</style>
+
+<script>
+function setLanguage(lang){
+ document.querySelectorAll("[data-lang]").forEach(el=>{
+  el.style.display=el.getAttribute("data-lang")==lang?"block":"none";
+ });
+}
+</script>
+</head>
+
+<body onload="setLanguage('en')">
+
+<header>
+<h1>Sharma Sweets</h1>
+<nav>
+<button onclick="setLanguage('en')">English</button>
+<button onclick="setLanguage('hi')">हिंदी</button>
+<button onclick="setLanguage('pa')">ਪੰਜਾਬੀ</button>
+</nav>
+</header>
+
+<div class="banner">
+🎉 Festival Special Offers Available – Contact Us Now!
+</div>
+
+<section>
+<div data-lang="en">
+<h2>Pure Taste. Traditional Sweets.</h2>
+<p>Famous sweet shop in Samana known for purity and authentic taste.</p>
+</div>
+
+<div data-lang="hi">
+<h2>शुद्ध स्वाद, पारंपरिक मिठाइयाँ</h2>
+<p>समाना की प्रसिद्ध मिठाई की दुकान, शुद्धता और स्वाद की पहचान।</p>
+</div>
+
+<div data-lang="pa">
+<h2>ਸ਼ੁੱਧ ਸੁਆਦ, ਪਰੰਪਰਾਗਤ ਮਿਠਾਈਆਂ</h2>
+<p>ਸਮਾਣਾ ਦੀ ਮਸ਼ਹੂਰ ਮਿਠਾਈ ਦੀ ਦੁਕਾਨ, ਸ਼ੁੱਧਤਾ ਅਤੇ ਸੁਆਦ ਲਈ ਪ੍ਰਸਿੱਧ।</p>
+</div>
+</section>
+
+<section>
+<h2>🍪 Our Popular Sweets</h2>
+<div class="gallery">
+<img src="https://source.unsplash.com/400x300/?indian-sweets">
+<img src="https://source.unsplash.com/400x300/?gulab-jamun">
+<img src="https://source.unsplash.com/400x300/?laddu">
+<img src="https://source.unsplash.com/400x300/?barfi">
+<img src="https://source.unsplash.com/400x300/?rasgulla">
+<img src="https://source.unsplash.com/400x300/?mithai">
+</div>
+<p>📸 Sample images – we can upload your real shop photos anytime</p>
+</section>
+
+<section>
+<h2>🛒 Online Order</h2>
+<p>Order your favorite sweets easily on WhatsApp</p>
+<a class="btn whatsapp" href="https://wa.me/919463153033?text=Hello%20Sharma%20Sweets,%20I%20want%20to%20place%20an%20order" target="_blank">
+Order on WhatsApp
+</a>
+</section>
+
+<section>
+<h2>📍 Our Location</h2>
+<p>
+Sadar Bazar, Opposite Netta Kitaba Wala<br>
+Samana – 147101, District Patiala
+</p>
+
+<iframe 
+src="https://www.google.com/maps?q=Sharma%20Sweets%20Samana&output=embed">
+</iframe>
+</section>
+
+<section>
+<h2>📞 Contact Us</h2>
+<a class="btn call" href="tel:+919463153033">Call Now</a>
+<a class="btn whatsapp" href="https://wa.me/919463153033" target="_blank">WhatsApp</a>
+</section>
+
+<footer>
+© 2026 Sharma Sweets | Samana
+</footer>
+
+</body>
+</html>
